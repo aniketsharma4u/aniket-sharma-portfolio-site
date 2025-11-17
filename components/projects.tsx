@@ -252,13 +252,49 @@ export function Projects() {
       link: "https://apps.shopify.com/tss-smart-dev",
     },
     {
-      title: "E Bazar",
+      title: "Pet Kart",
       category: "shopify",
       description:
-        "E Bazar is an AI-driven e-commerce platform offering a diverse range of products, including electronics, home decor, and lifestyle accessories. Designed to cater to a broad audience, the platform emphasizes user-friendly navigation, personalized recommendations, and seamless shopping experiences.",
-      techStack: ["Shopify", "Theme Customization"],
-      image: "/projects/shopify/e-bazar-min.jpg",
-      link: "https://www.ebazar.ai/",
+        "Pet Kart is a Shopify-based e-commerce store for premium pet products across the UAE. I designed and developed the complete frontend, created all product collections, built custom collection templates, and optimized the store for a smooth, mobile-friendly shopping experience.",
+      techStack: [
+        "Shopify",
+        "Theme Customization",
+        "Liquid",
+        "Collection & Filter Setup",
+        "Mobile Optimization",
+      ],
+      image: "/projects/shopify/petkart.jpg",
+      link: "https://www.petkart.ae/",
+    },
+	{
+      title: "AOON",
+      category: "shopify",
+      description:
+        "AOON is a modern Shopify-based online store offering a wide range of fashion and lifestyle products. I developed the full frontend layout, customized the theme, optimized the product and collection pages, and configured essential store settings to deliver a clean, fast, and user-friendly shopping experience.",
+      techStack: [
+        "Shopify",
+        "Theme Customization",
+        "Liquid",
+        "Product Setup",
+		"Collection Setup",
+        "Mobile Optimization",
+      ],
+      image: "/projects/shopify/aoon.jpg",
+      link: "https://www.aoon.ae/",
+    },
+	{
+      title: "AOON Android App",
+      category: "mobile_apps",
+      description:
+        "The AOON Android app is built using React Native and fully integrated with Shopify through GraphQL APIs. It delivers a fast, seamless shopping experience with real-time product data, smooth navigation, and a clean UI optimized for Android devices.",
+      techStack: [
+        "React Native",
+        "Shopify GraphQL API",
+        "Android",
+        "Mobile App Development",
+      ],
+      image: "/projects/shopify/aoon.jpg",
+      link: "https://www.aoon.ae/",
     },
   ];
 
@@ -292,6 +328,7 @@ export function Projects() {
                 <TabsTrigger value="codeigniter">CodeIgniter</TabsTrigger>
                 <TabsTrigger value="wordpress">WordPress</TabsTrigger>
                 <TabsTrigger value="shopify">Shopify</TabsTrigger>
+                <TabsTrigger value="mobile_apps">Mobile Apps</TabsTrigger>
               </TabsList>
             </div>
 
