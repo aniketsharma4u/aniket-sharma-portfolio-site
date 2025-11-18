@@ -220,6 +220,37 @@ export function Projects() {
       link: "https://catchfoundation.in/",
     },
     {
+      title: "Pet Kart",
+      category: "shopify",
+      description:
+        "Pet Kart is a Shopify-based e-commerce store for premium pet products across the UAE. I designed and developed the complete frontend, created all product collections, built custom collection templates, and optimized the store for a smooth, mobile-friendly shopping experience.",
+      techStack: [
+        "Shopify",
+        "Theme Customization",
+        "Liquid",
+        "Collection & Filter Setup",
+        "Mobile Optimization",
+      ],
+      image: "/projects/shopify/petkart.jpg",
+      link: "https://www.petkart.ae/",
+    },
+    {
+      title: "AOON",
+      category: "shopify",
+      description:
+        "AOON is a modern Shopify-based online store offering a wide range of fashion and lifestyle products. I developed the full frontend layout, customized the theme, optimized the product and collection pages, and configured essential store settings to deliver a clean, fast, and user-friendly shopping experience.",
+      techStack: [
+        "Shopify",
+        "Theme Customization",
+        "Liquid",
+        "Product Setup",
+        "Collection Setup",
+        "Mobile Optimization",
+      ],
+      image: "/projects/shopify/aoon.jpg",
+      link: "https://www.aoon.ae/",
+    },
+    {
       title: "More Ideas Shopify Store",
       category: "shopify",
       description:
@@ -252,37 +283,6 @@ export function Projects() {
       link: "https://apps.shopify.com/tss-smart-dev",
     },
     {
-      title: "Pet Kart",
-      category: "shopify",
-      description:
-        "Pet Kart is a Shopify-based e-commerce store for premium pet products across the UAE. I designed and developed the complete frontend, created all product collections, built custom collection templates, and optimized the store for a smooth, mobile-friendly shopping experience.",
-      techStack: [
-        "Shopify",
-        "Theme Customization",
-        "Liquid",
-        "Collection & Filter Setup",
-        "Mobile Optimization",
-      ],
-      image: "/projects/shopify/petkart.jpg",
-      link: "https://www.petkart.ae/",
-    },
-	{
-      title: "AOON",
-      category: "shopify",
-      description:
-        "AOON is a modern Shopify-based online store offering a wide range of fashion and lifestyle products. I developed the full frontend layout, customized the theme, optimized the product and collection pages, and configured essential store settings to deliver a clean, fast, and user-friendly shopping experience.",
-      techStack: [
-        "Shopify",
-        "Theme Customization",
-        "Liquid",
-        "Product Setup",
-		"Collection Setup",
-        "Mobile Optimization",
-      ],
-      image: "/projects/shopify/aoon.jpg",
-      link: "https://www.aoon.ae/",
-    },
-	{
       title: "AOON Android App",
       category: "mobile_apps",
       description:
@@ -290,11 +290,25 @@ export function Projects() {
       techStack: [
         "React Native",
         "Shopify GraphQL API",
-        "Android",
+        "Android Studio",
         "Mobile App Development",
       ],
-      image: "/projects/shopify/aoon.jpg",
-      link: "https://www.aoon.ae/",
+      image: "/projects/mobile_apps/aoon_android.jpg",
+      link: "https://play.google.com/store/apps/details?id=com.aoon.app",
+    },
+    {
+      title: "AOON iOS App",
+      category: "mobile_apps",
+      description:
+        "The AOON iOS app provides a modern and intuitive shopping experience, developed using React Native and connected to Shopify via GraphQL APIs. The app features optimized performance for iOS, clean interface design, and real-time syncing with the Shopify store.",
+      techStack: [
+        "React Native",
+        "Shopify GraphQL API",
+        "iOS Development",
+        "Mobile App Development",
+      ],
+      image: "/projects/mobile_apps/aoon_ios.jpg",
+      link: "https://apps.apple.com/in/app/aoon/id6752985164",
     },
   ];
 
@@ -323,12 +337,12 @@ export function Projects() {
           >
             <div className="flex justify-center">
               <TabsList>
-                <TabsTrigger value="all">All</TabsTrigger>
-                <TabsTrigger value="laravel">Laravel</TabsTrigger>
-                <TabsTrigger value="codeigniter">CodeIgniter</TabsTrigger>
-                <TabsTrigger value="wordpress">WordPress</TabsTrigger>
-                <TabsTrigger value="shopify">Shopify</TabsTrigger>
-                <TabsTrigger value="mobile_apps">Mobile Apps</TabsTrigger>
+                <TabsTrigger className="font-bold" value="all">All</TabsTrigger>
+                <TabsTrigger className="font-bold" value="laravel">Laravel</TabsTrigger>
+                <TabsTrigger className="font-bold" value="codeigniter">CodeIgniter</TabsTrigger>
+                <TabsTrigger className="font-bold" value="wordpress">WordPress</TabsTrigger>
+                <TabsTrigger className="font-bold" value="shopify">Shopify</TabsTrigger>
+                <TabsTrigger className="font-bold" value="mobile_apps">Mobile Apps</TabsTrigger>
               </TabsList>
             </div>
 
