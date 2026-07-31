@@ -19,7 +19,7 @@ export function Contact() {
         >
           <h2 className="text-3xl font-bold text-center mb-4">Get In Touch</h2>
           <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
+            I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
             I'll try my best to get back to you!
           </p>
 
@@ -41,8 +41,15 @@ export function Contact() {
                           <MapPin className="h-5 w-5 text-primary" />
                         </div>
                         <div>
-                          <h3 className="font-medium mb-1">Location</h3>
-                          <p className="text-muted-foreground">Oud Metha, Dubai, UAE</p>
+                          <h3 className="font-medium mb-2">Location</h3>
+                          <div className="space-y-2">
+                            <p className="text-muted-foreground flex items-center gap-2">
+                              <span>🇦🇪</span> Dubai, UAE
+                            </p>
+                            <p className="text-muted-foreground flex items-center gap-2">
+                              <span>🇮🇳</span> Uttar Pradesh, India
+                            </p>
+                          </div>
                         </div>
                       </div>
 
@@ -51,14 +58,23 @@ export function Contact() {
                           <Phone className="h-5 w-5 text-primary" />
                         </div>
                         <div>
-                          <h3 className="font-medium mb-1">Phone</h3>
-                          <a 
-                            href="tel:+971528384100"
-                            className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 group-hover:text-primary"
-                          >
-                            +971 528384100
-                            <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                          </a>
+                          <h3 className="font-medium mb-2">Phone</h3>
+                          <div className="space-y-2">
+                            <a
+                              href="tel:+971528384100"
+                              className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+                            >
+                              <span>🇦🇪</span> +971 52 838 4100
+                              <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </a>
+                            <a
+                              href="tel:+917016747947"
+                              className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+                            >
+                              <span>🇮🇳</span> +91 7016 747 947
+                              <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </a>
+                          </div>
                         </div>
                       </div>
 
@@ -68,7 +84,7 @@ export function Contact() {
                         </div>
                         <div>
                           <h3 className="font-medium mb-1">Email</h3>
-                          <a 
+                          <a
                             href="mailto:ank8525@gmail.com"
                             className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 group-hover:text-primary"
                           >
@@ -114,7 +130,7 @@ export function Contact() {
                       >
                         <a href="https://www.linkedin.com/in/aniketsharma4u" target="_blank" rel="noopener noreferrer">
                           <svg className="h-5 w-5 text-[#0A66C2]" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                           </svg>
                           Connect on LinkedIn
                         </a>
@@ -136,7 +152,17 @@ export function Contact() {
                       >
                         <a href="tel:+971528384100">
                           <Phone className="h-5 w-5 text-primary" />
-                          Call Me
+                          Call Me (UAE)
+                        </a>
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="w-full justify-start gap-2 hover:bg-primary/10 h-[52px]"
+                        asChild
+                      >
+                        <a href="tel:+917016747947">
+                          <Phone className="h-5 w-5 text-primary" />
+                          Call Me (India)
                         </a>
                       </Button>
                     </div>
