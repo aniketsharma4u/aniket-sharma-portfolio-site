@@ -1,8 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { motion } from "framer-motion";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export function Experience() {
   const experiences = [
@@ -20,7 +26,17 @@ export function Experience() {
         "Created the Shopify store for BYJU'S Middle East, with custom integration using Shopify API.",
         "Independently handled full project lifecycle: architecture, development, deployment, and maintenance.",
       ],
-      skills: ["Laravel", "React", "Tailwind CSS", "AWS", "Shopify API", "CI/CD", "Shopify", "Inertia", "GitHub Actions"],
+      skills: [
+        "Laravel",
+        "React",
+        "Tailwind CSS",
+        "AWS",
+        "Shopify API",
+        "CI/CD",
+        "Shopify",
+        "Inertia",
+        "GitHub Actions",
+      ],
     },
     {
       title: "PHP Web Developer",
@@ -35,22 +51,29 @@ export function Experience() {
         "Collaborated with UI/UX designers and QA teams to deliver responsive, bug-free experiences.",
         "Optimized server-side logic, resolved performance bottlenecks, and implemented reusable modules.",
       ],
-      skills: ["PHP", "Laravel", "CodeIgniter", "jQuery", "Bootstrap", "API Integration"],
-    },
-    {
-      title: "PHP Developer Intern",
-      company: "HMMBiz Web Solutions",
-      location: "Ahmedabad, India",
-      period: "October 2017 - March 2018",
-      description: [
-        "Created and maintained the visual aspects of websites, including layout, design, and interactivity.",
-        "Ensured that websites and applications work seamlessly across various devices and screen sizes.",
-        "Designed and developed custom WordPress themes based on client requirements.",
-        "Customized existing themes to match specific design needs and branding guidelines.",
+      skills: [
+        "PHP",
+        "Laravel",
+        "CodeIgniter",
+        "jQuery",
+        "Bootstrap",
+        "API Integration",
       ],
-      skills: ["HTML", "CSS", "JavaScript", "WordPress", "Responsive Design"],
     },
-  ]
+    // {
+    //   title: "PHP Developer Intern",
+    //   company: "HMMBiz Web Solutions",
+    //   location: "Ahmedabad, India",
+    //   period: "October 2017 - March 2018",
+    //   description: [
+    //     "Created and maintained the visual aspects of websites, including layout, design, and interactivity.",
+    //     "Ensured that websites and applications work seamlessly across various devices and screen sizes.",
+    //     "Designed and developed custom WordPress themes based on client requirements.",
+    //     "Customized existing themes to match specific design needs and branding guidelines.",
+    //   ],
+    //   skills: ["HTML", "CSS", "JavaScript", "WordPress", "Responsive Design"],
+    // },
+  ];
 
   return (
     <section id="experience" className="py-20">
@@ -62,7 +85,9 @@ export function Experience() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl font-bold text-center mb-12">Work Experience</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Work Experience
+          </h2>
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
@@ -108,6 +133,5 @@ export function Experience() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

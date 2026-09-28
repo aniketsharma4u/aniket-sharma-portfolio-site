@@ -33,7 +33,7 @@ export function About() {
 
             <div className="md:col-span-2">
               <p className="text-lg mb-6">
-                Results-driven Web Developer with 7 years of experience in
+                Results-driven Web Developer with 8 years of experience in
                 full-stack development, delivering scalable, secure, and
                 high-performance web applications. Proficient in PHP, Laravel,
                 React, Inertia.js, Tailwind CSS, MySQL and API integrations.
